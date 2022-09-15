@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student details</title>
+</head>
+<body bgcolor="orange" width="40px" height="100">
+    <script>
+    var s=(prompt("write name of student"));
+    document.write("<b>name of student -->  <b>"+s+"<br>");
+    var n=parseInt(prompt("enter roll no of student"));
+    document.write("<b>roll no -->   <b> "+n+"<br>");
+    var sum=0,avg;
+    for(var i=1;i<=5;i++)
+    {
+        var m=parseInt(prompt("enter marks in 100="));
+        sum=sum+m;
+    }
+    avg=sum/5;
+    document.write("<b>avg is -->  <b>"+avg+"<br>");
+         if( avg>90)
+         {
+         document.write("<b>excellent<b>");
+         }
+         else if (avg>80)
+         {
+        document.write("<b>very good<b>");
+         }
+         else if(avg>70)
+         {
+        document.write("<b>good<b>");
+         } 
+         else if(avg>=60)
+         {
+        document.write("<b>1st division<b>");
+         } 
+         else if(avg<60)
+         { 
+        document.write("<b>need work hard<b>");
+         }
+        else
+        {
+        document.write("<b>wrong input<b>");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reverse no</title>
+</head>
+<body bgcolor="cyan">
+    <script>
+    var r=0;
+    var n=parseInt(prompt("enter  no"));
+    document.write("n value is="+n+"<br>");
+    while(n>0)
+    {
+      document.write(n);
+      r=n%10;
+      r=r*10+r;
+      n=n/10;
+    }
+    document.write("reverse no is="+r);
+    </script>
+</body>
+</html>
